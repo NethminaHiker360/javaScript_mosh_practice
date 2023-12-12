@@ -16,5 +16,14 @@ const blog1 = {
     isLive: true
 }
 
+// constructor function
+function Post(title,body,auther){
+    this.title=title,
+    this.body=body,
+    this.auther=auther,
+    this.views=0,
+    this.comments=[],
+    this.isLive=false
+}
 
-console.log(blog1)
+console.log(new Post("a","b","c"))
