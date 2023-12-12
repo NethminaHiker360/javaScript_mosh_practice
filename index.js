@@ -5,17 +5,19 @@ address = {
 }
 
 // factory function
-function createAddress(address){
+function createAddress(street,city,zipCode){
     return{
-        ...address
+        street,
+        city,
+        zipCode
     }
 }
 
 // constructor fuction
-function Address(address){
-    for(let key in address){
-        this[key]=address[key]
-    }
+function Address(street,city,zipCode){
+    this.street=street,
+    this.city=city,
+    this.zipCode=zipCode
 }
 
-console.log(new Address(address))
+console.log(new Address("A","B","689"))
