@@ -1,26 +1,20 @@
-let address1 = new Address('a', 'b', 'c')
-let address2 = new Address('a', 'b', 'c')
-
-// constructor fuction
-function Address(street, city, zipCode) {
-    this.street = street,
-        this.city = city,
-        this.zipCode = zipCode
-}
-
-//check objects properties are same
-function areEqual(address1, address2) {
-    for (let key in address1) {
-        if (address1[key] !== address2[key]) {
-            return false
+const blog1 = {
+    title: "New Dawn",
+    body: "facr cry franchies",
+    auther: "Ubisoft",
+    views: 2270,
+    comments: [
+        {
+            auther: "Nethmina",
+            body: "Hi this"
+        },
+        {
+            auther: "Ravindu",
+            body: "blog post"
         }
-    }
-    return true
+    ],
+    isLive: true
 }
 
-// check objects reference are same
-function areSame(address1, address2) {
-    return address1 === address2 ? true : false
-}
 
-console.log(areEqual(address1, address2))
+console.log(blog1)
